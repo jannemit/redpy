@@ -11,7 +11,6 @@ import pickle
 from astropy.cosmology import WMAP9 as cosmo
 import seaborn as sns
 from astropy.table import Table
-%matplotlib inline
 
 
 plt.rcParams['figure.figsize'] = (10, 10)
