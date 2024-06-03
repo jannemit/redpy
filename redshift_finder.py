@@ -56,6 +56,7 @@ def get_lines(z):
 
     #Assigning the restframe wavelenghs to variables
     lya = 1215
+    lb = 1215
     n4 = 1487
     c4 = 1550
     heii = 1640
@@ -64,7 +65,6 @@ def get_lines(z):
     mgii = 2799
     ne5 = 3347
     ne5_2 = 3427
-    lb = 3600
     bb = 3645
     o2 = 3726
     o2_2 = 3729
@@ -100,7 +100,8 @@ def get_lines(z):
 
     #plotting lines for wavelengths over the range of redshift values and plotting labels for the lines
     plt.plot(1e-4*lya*(1+zarr),zarr, color='crimson')
-    plt.text(1.1, 8.5, r'Ly$\alpha$', rotation = 65, c = 'crimson', zorder = 1, fontsize = font)
+    plt.plot(1e-4*lb*(1+zarr),zarr, color='crimson')
+    plt.text(1.04, 8, r'Lyman break + Ly$\alpha$', rotation = 64, c = 'crimson', zorder = 1, fontsize = font)
 
     plt.plot(1e-4*n4*(1+zarr),zarr, color='mediumorchid')
     plt.text(1.45, 9.18, 'NIV]', rotation = 59, c = 'mediumorchid', zorder = 1, fontsize = font)
@@ -124,10 +125,9 @@ def get_lines(z):
     plt.plot(1e-4*ne5*(1+zarr),zarr, color='steelblue')
     plt.text(2.6, 6.95, '[NeV]', rotation = 36, c = 'steelblue', zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*lb*(1+zarr),zarr, color='lightseagreen')
     plt.plot(1e-4*bb*(1+zarr),zarr, color='lightseagreen')
-    plt.text(2.5, 6.1, 'Lyman + Balmer breaks', rotation = 34, c = 'lightseagreen', zorder = 1, fontsize = font)
-
+    plt.text(2.5, 6, 'Balmer break', rotation = 33, c = 'lightseagreen', zorder = 1, fontsize = font)
+    
     plt.plot(1e-4*o2*(1+zarr),zarr, color='blue')
     plt.plot(1e-4*o2_2*(1+zarr),zarr, color='blue')
     plt.plot(1e-4*ne3*(1+zarr),zarr, color='blue')
@@ -285,7 +285,7 @@ def get_lines(z):
 
     #the breaks 
     #making a list for wavelenghs and names
-    b = [3600, 3645]
+    b = [1215, 3645]
     bname = ['Lyman Break', 'Balmer Break']
 
     #making empty lists for each filter
