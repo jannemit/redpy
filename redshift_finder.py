@@ -22,17 +22,22 @@ plt.rc('font', family='sans-serif')
 plt.rcParams.update({'font.size': 20})
 
 
+z = input('Enter redshift:')
+z = float(z)
 
 def get_lines(z):
     """
     
     params
     ---
+    z: redshift, float
 
     returns
     ---
+    #what comes out when its run
     """
 
+    #Setting the figure size
     plt.rcParams['figure.figsize'] = (35, 15)
 
 
@@ -49,6 +54,7 @@ def get_lines(z):
     plt.axvspan(1.013, 1.282, label = 'F115W', color = '#3486CC', alpha = .5)
 
 
+    #Assigning the restframe wavelenghs to variables
     lya = 1215
     n4 = 1487
     c4 = 1550
@@ -86,13 +92,13 @@ def get_lines(z):
     pag = 12821
     paa = 18750
     
-
+    #font size for the wavelength labels on the plot
     font = 18
 
-
+    #range of values for redshift from 0 to 100
     zarr = np.arange(0,100)
 
-
+    #plotting lines for wavelengths over the range of redshift values and plotting labels for the lines
     plt.plot(1e-4*lya*(1+zarr),zarr, color='crimson')
     plt.text(1.1, 8.5, r'Ly$\alpha$', rotation = 65, c = 'crimson', zorder = 1, fontsize = font)
 
@@ -173,24 +179,30 @@ def get_lines(z):
     plt.plot(1e-4*paa*(1+zarr),zarr, color='brown')
     plt.text(4.50, 1.46, r'Pa$\alpha$', rotation = 8, c = 'brown', zorder = 1, fontsize = font)
 
-
+    #x-axis labels for the pivot wavelength of each filter
     ticks = [1.154, 1.501, 1.990, 2.786, 3.563, 4.092, 4.421, 5.635]
     labels = ticks
 
+    #x and y axes limits 
     plt.ylim(1,10)
     plt.xlim(1, 6.175)
 
-
+    #x and y axes labels
     plt.ylabel('Redshift')
     plt.xlabel('Wavelength [$\mu$m]')
+    #x and y axes ticks labels
     plt.xticks(ticks, labels, rotation = 70)
     plt.tick_params('y', length=10, width=1, which='minor')
+    #legend of filters
     plt.legend(loc = 'lower right', ncols = 2, fancybox = False, framealpha = .75, facecolor = 'w');
 
-
+    #generating the output for which wavelengths fall in which filters at a given redshift 
+    #the major lines
+    #making a list for wavelenghs and names
     m = [4960, 5008, 6565]
     mname = ['[OIII]', '[OIII]2', 'H\u03B1']
-    
+
+    #making empty lists for each filter
     mF115W = []
     mF150W = []
     mF200W = []
@@ -200,8 +212,11 @@ def get_lines(z):
     mF444W = []
     mF560W = []
 
+    #equation for wavelength at a given redshift 
     ml = [1e-4*x*(1+z) for x in m]
-    
+
+    #checking to see if the equation falls in each filter for the given redshift
+    #if it is, then it adds the name of the line to the empty filter list
     for i in range(len(ml)):
     
         x=ml[i]
@@ -224,6 +239,7 @@ def get_lines(z):
         if x>5.054 and x<6.171:
             mF560W.append(mnam)
 
+    #printing out the list of wavelengths for each filter, if there are none then nothing is output
     print('Major Lines:')
     if not mF115W:
         print(end = '')
@@ -267,10 +283,12 @@ def get_lines(z):
         print(*mF560W, sep = ', ')
     print('\n')
 
-
+    #the breaks 
+    #making a list for wavelenghs and names
     b = [3600, 3645]
     bname = ['Lyman Break', 'Balmer Break']
-    
+
+    #making empty lists for each filter
     bF115W = []
     bF150W = []
     bF200W = []
@@ -280,8 +298,11 @@ def get_lines(z):
     bF444W = []
     bF560W = []
 
+    #equation for wavelength at a given redshift 
     bl = [1e-4*x*(1+z) for x in b]
-    
+
+    #checking to see if the equation falls in each filter for the given redshift
+    #if it is, then it adds the name of the line to the empty filter list
     for i in range(len(bl)):
     
         x=bl[i]
@@ -304,7 +325,8 @@ def get_lines(z):
         if x>5.054 and x<6.171:
             bF560W.append(bnam)
 
-    print('Minor Lines:')
+    #printing out the list of wavelengths for each filter, if there are none then nothing is output
+    print('Breaks:')
     if not bF115W:
         print(end = '')
     else:
@@ -347,7 +369,8 @@ def get_lines(z):
         print(*bF560W, sep = ', ')
     print('\n')
 
-    
+    #the minor lines 
+    #making a list for wavelenghs and names
     e = [1215.67, 1487, 1550, 1640, 1909, 2439, 2799, 3347, 3427, 3726, 3729, 3869, 3890, 
          3867, 4102, 4342, 4863, 5876, 6302, 6550, 6585, 6718, 6732, 7753, 9069, 9531, 10052.6, 
          12820, 12821, 18750]
@@ -355,6 +378,7 @@ def get_lines(z):
             '[NeIII]', '[NeIII]2', '[NeIII]3', 'H\u03B4', 'H\u03B3', 'H\u03B2', 'HeI', '[OI]', '[NII]', '[NII]2', 
             '[SII]', '[SII]2', '[ArIII]', '[SIII]', '[SIII]2', 'Pa\u03B4', 'Pa\u03B2', 'Pa\u03B3', 'Pa\u03B1']
 
+    #making empty lists for each filter
     F115W = []
     F150W = []
     F200W = []
@@ -364,8 +388,11 @@ def get_lines(z):
     F444W = []
     F560W = []
 
+    #equation for wavelength at a given redshift 
     el = [1e-4*x*(1+z) for x in e]
-    
+
+    #checking to see if the equation falls in each filter for the given redshift
+    #if it is, then it adds the name of the line to the empty filter list
     for i in range(len(el)):
     
         x=el[i]
@@ -388,6 +415,7 @@ def get_lines(z):
         if x>5.054 and x<6.171:
             F560W.append(nam)
 
+    #printing out the list of wavelengths for each filter, if there are none then nothing is output
     print('Minor Lines')
     if not F115W:
         print(end = '')
@@ -430,10 +458,11 @@ def get_lines(z):
         print('In F560W', end = ': ')
         print(*F560W, sep = ', ')
 
-
+    #plotting a horizontal line at the given redshift
     plt.axhline(y = z, color = 'k', linestyle = '-', linewidth = 2.5)
+    plt.show()
+    plt.close()
     
     return z
 
-
-userinput = 
+get_lines(z)
