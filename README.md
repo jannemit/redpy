@@ -19,7 +19,7 @@ In F150W: CIII]<br/>
 In F200W: [NeIV], MgII<br/>
 In F277W: [NeV]1, [NeV]2, [OII]1, [OII]2, [NeIII]1, [NeIII]2, [NeIII]3, Hδ<br/>
 In F356W: Hγ, Hβ<br/>
-In F444W: HeI, [OI], [NII]<br/>
+In F444W: HeI, [OI], [NII]1<br/>
 In F560W: [SII]1, [SII]2, [ArIII]<br/>
 
 -----------------------------------------------
