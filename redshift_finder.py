@@ -74,13 +74,12 @@ def get_lines(z):
     hd = 4102
     hg = 4342
     hb = 4863
-    o3 = 5008
-    o3_2 = 4960
+    o3 = 4960
+    o3_2 = 5008
     hei = 5876
-    hei_2 = 10830
     oi = 6302
-    nii = 6585
-    nii_2 = 6550
+    nii = 6550
+    nii_2 = 6585
     ha = 6565
     sii = 6718
     sii_2 = 6732
@@ -147,7 +146,6 @@ def get_lines(z):
     #plt.text(4.50, 8.37, r'H$\beta$+[OIII]', rotation = 28, c = 'darkgreen',zorder = 1, fontsize = font)
 
     #plt.plot(1e-4*hei*(1+zarr),zarr, color='darkgreen')
-    ##plt.plot(1e-4*hei_2*(1+zarr),zarr, color='darkgray')
     #plt.text(4.50, 6.75, 'HeI', rotation = 25, c = 'darkgreen',zorder = 1, fontsize = font)
 
     #plt.plot(1e-4*oi*(1+zarr),zarr, color='olivedrab')
@@ -200,7 +198,7 @@ def get_lines(z):
     #the major lines
     #making a list for wavelenghs and names
     m = [4960, 5008, 6565]
-    mname = ['[OIII]', '[OIII]2', 'H\u03B1']
+    mname = ['[OIII]1', '[OIII]2', 'H\u03B1']
 
     #making empty lists for each filter
     mF115W = []
@@ -371,12 +369,12 @@ def get_lines(z):
 
     #the minor lines 
     #making a list for wavelenghs and names
-    e = [1215.67, 1487, 1550, 1640, 1909, 2439, 2799, 3347, 3427, 3726, 3729, 3869, 3890, 
+    e = [1215, 1487, 1550, 1640, 1909, 2439, 2799, 3347, 3427, 3726, 3729, 3869, 3890, 
          3867, 4102, 4342, 4863, 5876, 6302, 6550, 6585, 6718, 6732, 7753, 9069, 9531, 10052.6, 
          12820, 12821, 18750]
-    name = ['Ly\u03B1', 'NIV]', 'CIV', 'HeII', 'CIII]', '[NeIV]', 'MgII', '[NeV]', '[NeV]2', '[OII]', '[OII]2', 
-            '[NeIII]', '[NeIII]2', '[NeIII]3', 'H\u03B4', 'H\u03B3', 'H\u03B2', 'HeI', '[OI]', '[NII]', '[NII]2', 
-            '[SII]', '[SII]2', '[ArIII]', '[SIII]', '[SIII]2', 'Pa\u03B4', 'Pa\u03B2', 'Pa\u03B3', 'Pa\u03B1']
+    name = ['Ly\u03B1', 'NIV]', 'CIV', 'HeII', 'CIII]', '[NeIV]', 'MgII', '[NeV]1', '[NeV]2', '[OII]1', '[OII]2', 
+            '[NeIII]1', '[NeIII]2', '[NeIII]3', 'H\u03B4', 'H\u03B3', 'H\u03B2', 'HeI', '[OI]', '[NII]1', '[NII]2', 
+            '[SII]1', '[SII]2', '[ArIII]', '[SIII]1', '[SIII]2', 'Pa\u03B4', 'Pa\u03B2', 'Pa\u03B3', 'Pa\u03B1']
 
     #making empty lists for each filter
     F115W = []
