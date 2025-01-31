@@ -41,6 +41,8 @@ For a Linux OS or MacOS:
 
 2. In terminal navigate to file location (redshift_finder.py)
 
+<code> cd /path/to/redpy </code>
+
 3. input at the command line
 
 <code> ipython </code>
