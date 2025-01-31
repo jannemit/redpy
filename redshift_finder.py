@@ -56,7 +56,7 @@ def get_lines(z):
 
     #Assigning the restframe wavelenghs to variables
     lya = 1215
-    lb = 1215
+    lb = 912
     n4 = 1487
     c4 = 1550
     heii = 1640
@@ -283,7 +283,7 @@ def get_lines(z):
 
     #the breaks 
     #making a list for wavelenghs and names
-    b = [1215, 3645]
+    b = [912, 3645]
     bname = ['Lyman Break', 'Balmer Break']
 
     #making empty lists for each filter
