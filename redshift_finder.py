@@ -92,109 +92,109 @@ def get_lines(z):
     pag = 12821
     paa = 18750
     
-    #font size for the wavelength labels on the plot
-    font = 18
+    ##font size for the wavelength labels on the plot
+    #font = 18
 
-    #range of values for redshift from 0 to 100
-    zarr = np.arange(0,100)
+    ##range of values for redshift from 0 to 100
+    #zarr = np.arange(0,100)
 
-    #plotting lines for wavelengths over the range of redshift values and plotting labels for the lines
-    plt.plot(1e-4*lya*(1+zarr),zarr, color='crimson')
-    plt.plot(1e-4*lb*(1+zarr),zarr, color='crimson')
-    plt.text(1.04, 8, r'Lyman break + Ly$\alpha$', rotation = 64, c = 'crimson', zorder = 1, fontsize = font)
+    ##plotting lines for wavelengths over the range of redshift values and plotting labels for the lines
+    #plt.plot(1e-4*lya*(1+zarr),zarr, color='crimson')
+    #plt.plot(1e-4*lb*(1+zarr),zarr, color='crimson')
+    #plt.text(1.04, 8, r'Lyman break + Ly$\alpha$', rotation = 64, c = 'crimson', zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*n4*(1+zarr),zarr, color='mediumorchid')
-    plt.text(1.45, 9.18, 'NIV]', rotation = 59, c = 'mediumorchid', zorder = 1, fontsize = font)
+    #plt.plot(1e-4*n4*(1+zarr),zarr, color='mediumorchid')
+    #plt.text(1.45, 9.18, 'NIV]', rotation = 59, c = 'mediumorchid', zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*c4*(1+zarr),zarr, color='darkviolet')
-    plt.text(1.45, 8.65, 'CIV', rotation = 58, c = 'darkviolet', zorder = 1, fontsize = font)
+    #plt.plot(1e-4*c4*(1+zarr),zarr, color='darkviolet')
+    #plt.text(1.45, 8.65, 'CIV', rotation = 58, c = 'darkviolet', zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*heii*(1+zarr),zarr, color='purple')
-    plt.text(1.45, 8.17, 'HeII', rotation = 57, c = 'purple', zorder = 1, fontsize = font)
+    #plt.plot(1e-4*heii*(1+zarr),zarr, color='purple')
+    #plt.text(1.45, 8.17, 'HeII', rotation = 57, c = 'purple', zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*c3*(1+zarr),zarr, color='indigo')
-    plt.text(1.45, 6.91, 'CIII]', rotation = 53, c = 'indigo', zorder = 1, fontsize = font)
+    #plt.plot(1e-4*c3*(1+zarr),zarr, color='indigo')
+    #plt.text(1.45, 6.91, 'CIII]', rotation = 53, c = 'indigo', zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*ne4*(1+zarr),zarr, color='darkslateblue')
-    plt.text(1.9, 7.05, '[NeIV]', rotation = 45, c = 'darkslateblue', zorder = 1, fontsize = font)
+    #plt.plot(1e-4*ne4*(1+zarr),zarr, color='darkslateblue')
+    #plt.text(1.9, 7.05, '[NeIV]', rotation = 45, c = 'darkslateblue', zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*mgii*(1+zarr),zarr, color='slateblue')
-    plt.text(2.6, 8.46, 'MgII', rotation = 41, c = 'slateblue', zorder = 1, fontsize = font)
+    #plt.plot(1e-4*mgii*(1+zarr),zarr, color='slateblue')
+    #plt.text(2.6, 8.46, 'MgII', rotation = 41, c = 'slateblue', zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*ne5_2*(1+zarr),zarr, color='steelblue')
-    plt.plot(1e-4*ne5*(1+zarr),zarr, color='steelblue')
-    plt.text(2.6, 6.95, '[NeV]', rotation = 36, c = 'steelblue', zorder = 1, fontsize = font)
+    #plt.plot(1e-4*ne5_2*(1+zarr),zarr, color='steelblue')
+    #plt.plot(1e-4*ne5*(1+zarr),zarr, color='steelblue')
+    #plt.text(2.6, 6.95, '[NeV]', rotation = 36, c = 'steelblue', zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*bb*(1+zarr),zarr, color='lightseagreen')
-    plt.text(2.5, 6, 'Balmer break', rotation = 33, c = 'lightseagreen', zorder = 1, fontsize = font)
+    #plt.plot(1e-4*bb*(1+zarr),zarr, color='lightseagreen')
+    #plt.text(2.5, 6, 'Balmer break', rotation = 33, c = 'lightseagreen', zorder = 1, fontsize = font)
     
-    plt.plot(1e-4*o2*(1+zarr),zarr, color='blue')
-    plt.plot(1e-4*o2_2*(1+zarr),zarr, color='blue')
-    plt.plot(1e-4*ne3*(1+zarr),zarr, color='blue')
-    plt.plot(1e-4*ne3_2*(1+zarr),zarr, color='blue')
-    plt.plot(1e-4*ne3_3*(1+zarr),zarr, color='blue')
-    plt.text(3.3, 7.7, '[OII]+[NeIII]', rotation = 32, c = 'blue', zorder = 1, fontsize = font)
+    #plt.plot(1e-4*o2*(1+zarr),zarr, color='blue')
+    #plt.plot(1e-4*o2_2*(1+zarr),zarr, color='blue')
+    #plt.plot(1e-4*ne3*(1+zarr),zarr, color='blue')
+    #plt.plot(1e-4*ne3_2*(1+zarr),zarr, color='blue')
+    #plt.plot(1e-4*ne3_3*(1+zarr),zarr, color='blue')
+    #plt.text(3.3, 7.7, '[OII]+[NeIII]', rotation = 32, c = 'blue', zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*hd*(1+zarr),zarr, color='royalblue')
-    plt.text(4.1, 9.12, r'H$\delta$', rotation = 32, c = 'royalblue', zorder = 1, fontsize = font)
+    #plt.plot(1e-4*hd*(1+zarr),zarr, color='royalblue')
+    #plt.text(4.1, 9.12, r'H$\delta$', rotation = 32, c = 'royalblue', zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*hg*(1+zarr),zarr, color='teal')
-    plt.text(4.1, 8.58, r'H$\gamma$', rotation = 30, c = 'teal', zorder = 1, fontsize = font)
+    #plt.plot(1e-4*hg*(1+zarr),zarr, color='teal')
+    #plt.text(4.1, 8.58, r'H$\gamma$', rotation = 30, c = 'teal', zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*o3*(1+zarr),zarr, color='darkgreen')
-    plt.plot(1e-4*o3_2*(1+zarr),zarr, color='darkgreen')
-    plt.plot(1e-4*hb*(1+zarr),zarr, color='darkgreen')
-    plt.text(4.50, 8.37, r'H$\beta$+[OIII]', rotation = 28, c = 'darkgreen',zorder = 1, fontsize = font)
+    #plt.plot(1e-4*o3*(1+zarr),zarr, color='darkgreen')
+    #plt.plot(1e-4*o3_2*(1+zarr),zarr, color='darkgreen')
+    #plt.plot(1e-4*hb*(1+zarr),zarr, color='darkgreen')
+    #plt.text(4.50, 8.37, r'H$\beta$+[OIII]', rotation = 28, c = 'darkgreen',zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*hei*(1+zarr),zarr, color='darkgreen')
-    #plt.plot(1e-4*hei_2*(1+zarr),zarr, color='darkgray')
-    plt.text(4.50, 6.75, 'HeI', rotation = 25, c = 'darkgreen',zorder = 1, fontsize = font)
+    #plt.plot(1e-4*hei*(1+zarr),zarr, color='darkgreen')
+    ##plt.plot(1e-4*hei_2*(1+zarr),zarr, color='darkgray')
+    #plt.text(4.50, 6.75, 'HeI', rotation = 25, c = 'darkgreen',zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*oi*(1+zarr),zarr, color='olivedrab')
-    plt.text(4.50, 6.25, '[OI]', rotation = 22, c = 'olivedrab',zorder = 1, fontsize = font)
+    #plt.plot(1e-4*oi*(1+zarr),zarr, color='olivedrab')
+    #plt.text(4.50, 6.25, '[OI]', rotation = 22, c = 'olivedrab',zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*ha*(1+zarr),zarr, c= 'red')
-    plt.plot(1e-4*nii*(1+zarr),zarr, c= 'red')
-    plt.plot(1e-4*nii_2*(1+zarr),zarr, color='red')
-    plt.text(4.50, 5.95, r'H$\alpha$ + [NII]', rotation = 21, c = 'red', zorder = 1, fontsize = font)
+    #plt.plot(1e-4*ha*(1+zarr),zarr, c= 'red')
+    #plt.plot(1e-4*nii*(1+zarr),zarr, c= 'red')
+    #plt.plot(1e-4*nii_2*(1+zarr),zarr, color='red')
+    #plt.text(4.50, 5.95, r'H$\alpha$ + [NII]', rotation = 21, c = 'red', zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*sii*(1+zarr),zarr, color='darkred')
-    plt.plot(1e-4*sii_2*(1+zarr),zarr, color='darkred')
-    plt.text(4.50, 5.5, '[SII]', rotation = 19, c = 'darkred',zorder = 1, fontsize = font)
+    #plt.plot(1e-4*sii*(1+zarr),zarr, color='darkred')
+    #plt.plot(1e-4*sii_2*(1+zarr),zarr, color='darkred')
+    #plt.text(4.50, 5.5, '[SII]', rotation = 19, c = 'darkred',zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*ar3*(1+zarr),zarr, color = 'rebeccapurple')
-    plt.text(4.50, 4.9, '[ArIII]', rotation = 18, c = 'rebeccapurple',zorder = 1, fontsize = font)
+    #plt.plot(1e-4*ar3*(1+zarr),zarr, color = 'rebeccapurple')
+    #plt.text(4.50, 4.9, '[ArIII]', rotation = 18, c = 'rebeccapurple',zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*s3*(1+zarr),zarr, color='indigo')
-    plt.plot(1e-4*s3_2*(1+zarr),zarr, color='indigo')
-    plt.text(4.50, 4.08, '[SIII]', rotation = 16, c = 'indigo',zorder = 1, fontsize = font)
+    #plt.plot(1e-4*s3*(1+zarr),zarr, color='indigo')
+    #plt.plot(1e-4*s3_2*(1+zarr),zarr, color='indigo')
+    #plt.text(4.50, 4.08, '[SIII]', rotation = 16, c = 'indigo',zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*pad*(1+zarr),zarr, color='brown')
-    plt.text(4.50, 3.54, r'Pa$\delta$', rotation = 14, c = 'brown', zorder = 1, fontsize = font)
+    #plt.plot(1e-4*pad*(1+zarr),zarr, color='brown')
+    #plt.text(4.50, 3.54, r'Pa$\delta$', rotation = 14, c = 'brown', zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*pab*(1+zarr),zarr, color='brown')
-    plt.plot(1e-4*pag*(1+zarr),zarr, color='brown')
-    plt.text(4.50, 2.6, r'Pa$\beta$ + Pa$\gamma$', rotation = 11, c = 'brown',zorder = 1, fontsize = font)
+    #plt.plot(1e-4*pab*(1+zarr),zarr, color='brown')
+    #plt.plot(1e-4*pag*(1+zarr),zarr, color='brown')
+    #plt.text(4.50, 2.6, r'Pa$\beta$ + Pa$\gamma$', rotation = 11, c = 'brown',zorder = 1, fontsize = font)
 
-    plt.plot(1e-4*paa*(1+zarr),zarr, color='brown')
-    plt.text(4.50, 1.46, r'Pa$\alpha$', rotation = 8, c = 'brown', zorder = 1, fontsize = font)
+    #plt.plot(1e-4*paa*(1+zarr),zarr, color='brown')
+    #plt.text(4.50, 1.46, r'Pa$\alpha$', rotation = 8, c = 'brown', zorder = 1, fontsize = font)
 
-    #x-axis labels for the pivot wavelength of each filter
-    ticks = [1.154, 1.501, 1.990, 2.786, 3.563, 4.092, 4.421, 5.635]
-    labels = ticks
+    ##x-axis labels for the pivot wavelength of each filter
+    #ticks = [1.154, 1.501, 1.990, 2.786, 3.563, 4.092, 4.421, 5.635]
+    #labels = ticks
 
-    #x and y axes limits 
-    plt.ylim(1,10)
-    plt.xlim(1, 6.175)
+    ##x and y axes limits 
+    #plt.ylim(1,10)
+    #plt.xlim(1, 6.175)
 
-    #x and y axes labels
-    plt.ylabel('Redshift')
-    plt.xlabel('Wavelength [$\mu$m]')
-    #x and y axes ticks labels
-    plt.xticks(ticks, labels, rotation = 70)
-    plt.tick_params('y', length=10, width=1, which='minor')
-    #legend of filters
-    plt.legend(loc = 'lower right', ncols = 2, fancybox = False, framealpha = .75, facecolor = 'w');
+    ##x and y axes labels
+    #plt.ylabel('Redshift')
+    #plt.xlabel('Wavelength [$\mu$m]')
+    ##x and y axes ticks labels
+    #plt.xticks(ticks, labels, rotation = 70)
+    #plt.tick_params('y', length=10, width=1, which='minor')
+    ##legend of filters
+    #plt.legend(loc = 'lower right', ncols = 2, fancybox = False, framealpha = .75, facecolor = 'w');
 
     #generating the output for which wavelengths fall in which filters at a given redshift 
     #the major lines
