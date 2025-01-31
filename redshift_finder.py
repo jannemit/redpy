@@ -458,10 +458,10 @@ def get_lines(z):
         print('In F560W', end = ': ')
         print(*F560W, sep = ', ')
 
-    #plotting a horizontal line at the given redshift
-    plt.axhline(y = z, color = 'k', linestyle = '-', linewidth = 2.5)
-    plt.show()
-    plt.close()
+    ##plotting a horizontal line at the given redshift
+    #plt.axhline(y = z, color = 'k', linestyle = '-', linewidth = 2.5)
+    #plt.show()
+    #plt.close()
     
     return z
 
