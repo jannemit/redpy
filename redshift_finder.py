@@ -13,13 +13,13 @@ import seaborn as sns
 from astropy.table import Table
 
 
-plt.rcParams['figure.figsize'] = (10, 10)
-plt.rc('axes', labelsize=27)
-#plt.rc('axes', labelweight='bold')
-plt.rc('axes', titlesize=27)
-plt.rc('axes', titleweight='bold')
-plt.rc('font', family='sans-serif')
-plt.rcParams.update({'font.size': 20})
+#plt.rcParams['figure.figsize'] = (10, 10)
+#plt.rc('axes', labelsize=27)
+##plt.rc('axes', labelweight='bold')
+#plt.rc('axes', titlesize=27)
+#plt.rc('axes', titleweight='bold')
+#plt.rc('font', family='sans-serif')
+#plt.rcParams.update({'font.size': 20})
 
 
 z = input('Enter redshift:')
@@ -37,21 +37,21 @@ def get_lines(z):
     #what comes out when its run
     """
 
-    #Setting the figure size
-    plt.rcParams['figure.figsize'] = (35, 15)
+    ##Setting the figure size
+    #plt.rcParams['figure.figsize'] = (35, 15)
 
 
-    #plotting the James Webb Space Telescope filters
-    plt.axvspan(5.054, 6.171, label = 'F560W', color = '#FF7950', alpha = .5)
+    ##plotting the James Webb Space Telescope filters
+    #plt.axvspan(5.054, 6.171, label = 'F560W', color = '#FF7950', alpha = .5)
 
-    plt.axvspan(3.881, 4.982, label = 'F444W', color = '#FF9400', alpha = .5)
-    plt.axvspan(3.866, 4.302, label = 'F410M', color = '#FFD107', alpha = .5)
-    plt.axvspan(3.135, 3.981, label = 'F356W', color = '#E6FF2C', alpha = .5)
-    plt.axvspan(2.423, 3.132, label = 'F277W', color = '#589C00', alpha = .5)
-    plt.axvspan(1.755, 2.227, label = 'F200W', color = '#147A21', alpha = .5)
+    #plt.axvspan(3.881, 4.982, label = 'F444W', color = '#FF9400', alpha = .5)
+    #plt.axvspan(3.866, 4.302, label = 'F410M', color = '#FFD107', alpha = .5)
+    #plt.axvspan(3.135, 3.981, label = 'F356W', color = '#E6FF2C', alpha = .5)
+    #plt.axvspan(2.423, 3.132, label = 'F277W', color = '#589C00', alpha = .5)
+    #plt.axvspan(1.755, 2.227, label = 'F200W', color = '#147A21', alpha = .5)
 
-    plt.axvspan(1.331, 1.668, label = 'F150W', color = '#43ACB3', alpha = .5)
-    plt.axvspan(1.013, 1.282, label = 'F115W', color = '#3486CC', alpha = .5)
+    #plt.axvspan(1.331, 1.668, label = 'F150W', color = '#43ACB3', alpha = .5)
+    #plt.axvspan(1.013, 1.282, label = 'F115W', color = '#3486CC', alpha = .5)
 
 
     #Assigning the restframe wavelenghs to variables
