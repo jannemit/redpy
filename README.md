@@ -13,10 +13,10 @@ The emission lines used are [ArIII]=7753, Balmer break=3645, CIII]=1909, CIV=155
 For a Linux OS or MacOS:
 
 0. If you're familiar with running .py files, run redshift_finder.py in your command line, and it will prompt you. If you are not familiar, follow this step by step guide
-1. Download redshift_finder.py
-2. Open terminal
-3. Navigate to file location (cd /path/to/file)
-4. type <code> ipython </code>
-5. type <code> redshift_finder.py </code>
-6. You will be prompted with "Enter redshift:", input a positive number with or without a decimal
-7. The output will be a list of redshifts and an image with filters and emission lines
+1. Download redshift_finder.py, in terminal type <code> git clone https://githublink </code> 
+3. Open terminal
+4. Navigate to file location (cd /path/to/file)
+5. type <code> ipython </code>
+6. type <code> redshift_finder.py </code>
+7. You will be prompted with "Enter redshift:", input a positive number with or without a decimal
+8. The output will be a list of redshifts and an image with filters and emission lines
