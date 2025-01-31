@@ -416,7 +416,7 @@ def get_lines(z):
             F560W.append(nam)
 
     #printing out the list of wavelengths for each filter, if there are none then nothing is output
-    print('Minor Lines')
+    print('Minor Lines:')
     if not F115W:
         print(end = '')
     else:
