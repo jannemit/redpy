@@ -2,7 +2,28 @@
 
 redpy is a tool for the Cosmic Evolution Early Release Science (CEERS) survey using the James Webb Space Telescope (JWST) NIRCam photometric filters. redpy takes an input redshift, z, and outputs a list of photometric filters and the emission lines that fall in each. An example of this  emission line output with z=6.5887 is shown below.
 
-![emissionlineoutput](https://github.com/user-attachments/assets/6bba328e-580a-4ff0-ae94-43b7fa847c2c)
+-----------------------------------------------
+
+Major Lines:<br/>
+In F356W: [OIII], [OIII]2<br/>
+In F444W: Hα<br/>
+
+
+Breaks:<br/>
+In F277W: Balmer Break<br/>
+
+
+Minor Lines:<br/>
+In F115W: NIV], CIV, HeII<br/>
+In F150W: CIII]<br/>
+In F200W: [NeIV], MgII<br/>
+In F277W: [NeV], [NeV]2, [OII], [OII]2, [NeIII], [NeIII]2, [NeIII]3, Hδ<br/>
+In F356W: Hγ, Hβ<br/>
+In F444W: HeI, [OI], [NII]<br/>
+In F560W: [SII], [SII]2, [ArIII]<br/>
+
+-----------------------------------------------
+
 
 The filters used are F115W, F150W, F200W, F277W, F356W, F410M, F444W, and F560W.
 
