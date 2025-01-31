@@ -5,7 +5,7 @@ redpy is a tool for the Cosmic Evolution Early Release Science (CEERS) survey us
 -----------------------------------------------
 
 Major Lines:<br/>
-In F356W: [OIII], [OIII]2<br/>
+In F356W: [OIII]1, [OIII]2<br/>
 In F444W: Hα<br/>
 
 
@@ -17,10 +17,10 @@ Minor Lines:<br/>
 In F115W: NIV], CIV, HeII<br/>
 In F150W: CIII]<br/>
 In F200W: [NeIV], MgII<br/>
-In F277W: [NeV], [NeV]2, [OII], [OII]2, [NeIII], [NeIII]2, [NeIII]3, Hδ<br/>
+In F277W: [NeV]1, [NeV]2, [OII]1, [OII]2, [NeIII]1, [NeIII]2, [NeIII]3, Hδ<br/>
 In F356W: Hγ, Hβ<br/>
 In F444W: HeI, [OI], [NII]<br/>
-In F560W: [SII], [SII]2, [ArIII]<br/>
+In F560W: [SII]1, [SII]2, [ArIII]<br/>
 
 -----------------------------------------------
 
