@@ -13,7 +13,7 @@ The emission lines used are [ArIII]=7753, Balmer break=3645, CIII]=1909, CIV=155
 For a Linux OS or MacOS:
 
 0. If you're familiar with running .py files, run redshift_finder.py in your command line, and it will prompt you. If you are not familiar, follow this step by step guide
-1. Download redshift_finder.py, in terminal type <code> git clone https://githublink </code> 
+1. Download redshift_finder.py, in terminal type <code> git clone https://github.com/jannemit/redpy.git </code> 
 3. Open terminal
 4. Navigate to file location (cd /path/to/file)
 5. type <code> ipython </code>
