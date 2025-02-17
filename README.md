@@ -54,7 +54,7 @@ For a Linux OS or MacOS:
 5. You will be prompted with "Enter redshift:", input a positive number with or without a decimal
     
 6. The output will be a list of emission line filter locations
-
+<br/>
 
 
 ALTERNATIVE for Lixus OS or Mac OS (follow from above until step 3):
