@@ -53,4 +53,22 @@ For a Linux OS or MacOS:
 
 5. You will be prompted with "Enter redshift:", input a positive number with or without a decimal
     
-6. The output will be a list of emission line filter locations 
+6. The output will be a list of emission line filter locations
+
+
+
+ALTERNATIVE for Lixus OS or Mac OS (follow from above until step 3):
+
+3. input at the command line
+
+<code> python redshift_finder.py </code>
+
+or
+
+<code> python3 redshift_finder.py </code>
+
+depending on the version of python used
+
+4. You will be prompted with "Enter redshift:", input a positive number with or without a decimal
+    
+5. The output will be a list of emission line filter locations 
