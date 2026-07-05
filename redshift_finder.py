@@ -53,6 +53,20 @@ def get_lines(z):
     #plt.axvspan(1.331, 1.668, label = 'F150W', color = '#43ACB3', alpha = .5)
     #plt.axvspan(1.013, 1.282, label = 'F115W', color = '#3486CC', alpha = .5)
 
+    #plt.axvspan(0.624, 0.781, label = 'F070W', color = '#3486CC', alpha = .5)
+    #plt.axvspan(0.795, 2.005, label = 'F090W', color = '#3486CC', alpha = .5)
+    #plt.axvspan(1.331, 1.479, label = 'F140M', color = '#3486CC', alpha = .5)
+    #plt.axvspan(1.542, 1.713, label = 'F162M', color = '#3486CC', alpha = .5)
+    #plt.axvspan(1.722, 1.968, label = 'F182M', color = '#3486CC', alpha = .5)
+    #plt.axvspan(1.992, 2.201, label = 'F210M', color = '#3486CC', alpha = .5)
+    #plt.axvspan(2.412, 2.595, label = 'F250M', color = '#3486CC', alpha = .5)
+    #plt.axvspan(2.831, 3.156, label = 'F300M', color = '#3486CC', alpha = .5)
+    #plt.axvspan(3.177, 3.537, label = 'F335M', color = '#3486CC', alpha = .5)
+    #plt.axvspan(3.426, 3.814, label = 'F360M', color = '#3486CC', alpha = .5)
+    #plt.axvspan(4.167, 4.398, label = 'F430M', color = '#3486CC', alpha = .5)
+    #plt.axvspan(4.515, 4.747, label = 'F460M', color = '#3486CC', alpha = .5)
+    #plt.axvspan(4.662, 4.972, label = 'F480M', color = '#3486CC', alpha = .5)
+
 
     #Assigning the restframe wavelenghs to variables
     lya = 1215
@@ -201,13 +215,26 @@ def get_lines(z):
     mname = ['[OIII]1', '[OIII]2', 'H\u03B1']
 
     #making empty lists for each filter
+    mF070W = []
+    mF090W = []
     mF115W = []
+    mF140M = []
     mF150W = []
+    mF162M = []
+    mF182M = []
     mF200W = []
+    mF210M = []
+    mF250M = []
     mF277W = []
+    mF300M = []
+    mF335M = []
     mF356W = []
+    mF360M = []
     mF410M = []
+    mF430M = []
     mF444W = []
+    mF460M = []
+    mF480M = []
     mF560W = []
 
     #equation for wavelength at a given redshift 
@@ -220,60 +247,151 @@ def get_lines(z):
         x=ml[i]
         mnam=mname[i]
         
+        if x>0.624 and x<0.781:
+            mF070W.append(mnam)
+        if x>0.795 and x<1.005:
+            mF090W.append(mnam)
         if x>1.013 and x<1.282:
             mF115W.append(mnam)
+        if x>1.331 and x<1.479:
+            mF140M.append(mnam)
         if x>1.331 and x<1.668:
             mF150W.append(mnam)
+        if x>1.542 and x<1.713:
+            mF162M.append(mnam)
+        if x>1.722 and x<1.968:
+            mF182M.append(mnam)
         if x>1.755 and x<2.227:
             mF200W.append(mnam)
+        if x>1.992 and x<2.201:
+            mF210M.append(mnam)
+        if x>2.412 and x<2.595:
+            mF250M.append(mnam)
         if x>2.423 and x<3.132:
             mF277W.append(mnam)
+        if x>2.831 and x<3.156:
+            mF300M.append(mnam)
+        if x>3.177 and x<3.537:
+            mF335M.append(mnam)
         if x>3.135 and x<3.981:
             mF356W.append(mnam)
+        if x>3.426 and x<3.814:
+            mF360M.append(mnam)
         if x>3.866 and x<4.302:
             mF410M.append(mnam)
+        if x>4.167 and x<4.398:
+            mF430M.append(mnam)
         if x>3.881 and x<4.982:
             mF444W.append(mnam)
+        if x>4.515 and x<4.747:
+            mF460M.append(mnam)
+        if x>4.662 and x<4.972:
+            mF480M.append(mnam)
         if x>5.054 and x<6.171:
             mF560W.append(mnam)
 
     #printing out the list of wavelengths for each filter, if there are none then nothing is output
     print('Major Lines:')
+    if not mF070W:
+        print(end = '')
+    else:
+        print('In F070W', end = ': ')
+        print(*mF070W, sep = ', ')
+    if not mF090W:
+        print(end = '')
+    else:
+        print('In F090W', end = ': ')
+        print(*mF090W, sep = ', ')
     if not mF115W:
         print(end = '')
     else:
         print('In F115W', end = ': ')
         print(*mF115W, sep = ', ')
+    if not mF140M:
+        print(end = '')
+    else:
+        print('In F140M', end = ': ')
+        print(*mF140M, sep = ', ')
     if not mF150W:
         print(end = '')
     else:
         print('In F150W', end = ': ')
         print(*mF150W, sep = ', ')
+    if not mF162M:
+        print(end = '')
+    else:
+        print('In F162M', end = ': ')
+        print(*mF162M, sep = ', ')
+    if not mF182M:
+        print(end = '')
+    else:
+        print('In F182M', end = ': ')
+        print(*mF182M, sep = ', ')
     if not mF200W:
         print(end = '')
     else:
         print('In F200W', end = ': ')
         print(*mF200W, sep = ', ')
+    if not mF210M:
+        print(end = '')
+    else:
+        print('In F210M', end = ': ')
+        print(*mF210M, sep = ', ')
+    if not mF250M:
+        print(end = '')
+    else:
+        print('In F250M', end = ': ')
+        print(*mF250M, sep = ', ')
     if not mF277W:
         print(end = '')
     else:
         print('In F277W', end = ': ')
         print(*mF277W, sep = ', ')
+    if not mF300M:
+        print(end = '')
+    else:
+        print('In F300M', end = ': ')
+        print(*mF300M, sep = ', ')
+    if not mF335M:
+        print(end = '')
+    else:
+        print('In F335M', end = ': ')
+        print(*mF335M, sep = ', ')
     if not mF356W:
         print(end = '')
     else:
         print('In F356W', end = ': ')
         print(*mF356W, sep = ', ')
+    if not mF360M:
+        print(end = '')
+    else:
+        print('In F360M', end = ': ')
+        print(*mF360M, sep = ', ')
     if not mF410M:
         print(end = '')
     else:
         print('In F410M', end = ': ')
         print(*mF410M, sep = ', ')
-    if not mF444W:
+    if not mF430M:
         print(end = '')
+    else:
+        print('In F430M', end = ': ')
+        print(*mF430M, sep = ', ')
+    if not mF444W:
+        print(end= '')
     else:
         print('In F444W', end = ': ')
         print(*mF444W, sep = ', ')
+    if not mF460M:
+        print(end = '')
+    else:
+        print('In F460M', end = ': ')
+        print(*mF460M, sep = ', ')
+    if not mF480M:
+        print(end = '')
+    else:
+        print('In F480M', end = ': ')
+        print(*mF480M, sep = ', ')
     if not mF560W:
         print(end = '')
     else:
@@ -287,13 +405,26 @@ def get_lines(z):
     bname = ['Lyman Break', 'Balmer Break']
 
     #making empty lists for each filter
+    bF070W = []
+    bF090W = []
     bF115W = []
+    bF140M = []
     bF150W = []
+    bF162M = []
+    bF182M = []
     bF200W = []
+    bF210M = []
+    bF250M = []
     bF277W = []
+    bF300M = []
+    bF335M = []
     bF356W = []
+    bF360M = []
     bF410M = []
+    bF430M = []
     bF444W = []
+    bF460M = []
+    bF480M = []
     bF560W = []
 
     #equation for wavelength at a given redshift 
@@ -305,61 +436,152 @@ def get_lines(z):
     
         x=bl[i]
         bnam=bname[i]
-        
+
+        if x>0.624 and x<0.781:
+            bF070W.append(bnam)
+        if x>0.795 and x<1.005:
+            bF090W.append(bnam)
         if x>1.013 and x<1.282:
             bF115W.append(bnam)
+        if x>1.331 and x<1.479:
+            bF140M.append(bnam)
         if x>1.331 and x<1.668:
             bF150W.append(bnam)
+        if x>1.542 and x<1.713:
+            bF162M.append(bnam)
+        if x>1.722 and x<1.968:
+            bF182M.append(bnam)
         if x>1.755 and x<2.227:
             bF200W.append(bnam)
+        if x>1.992 and x<2.201:
+            bF210M.append(bnam)
+        if x>2.412 and x<2.595:
+            bF250M.append(bnam)
         if x>2.423 and x<3.132:
             bF277W.append(bnam)
+        if x>2.831 and x<3.156:
+            bF300M.append(bnam)
+        if x>3.177 and x<3.537:
+            bF335M.append(bnam)
         if x>3.135 and x<3.981:
             bF356W.append(bnam)
+        if x>3.426 and x<3.814:
+            bF360M.append(bnam)
         if x>3.866 and x<4.302:
             bF410M.append(bnam)
+        if x>4.167 and x<4.398:
+            bF430M.append(bnam)
         if x>3.881 and x<4.982:
             bF444W.append(bnam)
+        if x>4.515 and x<4.747:
+            bF460M.append(bnam)
+        if x>4.662 and x<4.972:
+            bF480M.append(bnam)
         if x>5.054 and x<6.171:
             bF560W.append(bnam)
 
     #printing out the list of wavelengths for each filter, if there are none then nothing is output
     print('Breaks:')
+    if not bF070W:
+        print(end = '')
+    else:
+        print('In F070W', end = ': ')
+        print(*bF070W, sep = ', ')
+    if not bF090W:
+        print(end = '')
+    else:
+        print('In F090W', end = ': ')
+        print(*bF090W, sep = ', ')
     if not bF115W:
         print(end = '')
     else:
         print('In F115W', end = ': ')
         print(*bF115W, sep = ', ')
+    if not bF140M:
+        print(end = '')
+    else:
+        print('In F140M', end = ': ')
+        print(*bF140M, sep = ', ')
     if not bF150W:
         print(end = '')
     else:
         print('In F150W', end = ': ')
         print(*bF150W, sep = ', ')
+    if not bF162M:
+        print(end = '')
+    else:
+        print('In F162M', end = ': ')
+        print(*bF162M, sep = ', ')
+    if not bF182M:
+        print(end = '')
+    else:
+        print('In F182M', end = ': ')
+        print(*bF182M, sep = ', ')
     if not bF200W:
         print(end = '')
     else:
         print('In F200W', end = ': ')
         print(*bF200W, sep = ', ')
+    if not bF210M:
+        print(end = '')
+    else:
+        print('In F210M', end = ': ')
+        print(*bF210M, sep = ', ')
+    if not bF250M:
+        print(end = '')
+    else:
+        print('In F250M', end = ': ')
+        print(*bF250M, sep = ', ')
     if not bF277W:
         print(end = '')
     else:
         print('In F277W', end = ': ')
         print(*bF277W, sep = ', ')
+    if not bF300M:
+        print(end = '')
+    else:
+        print('In F300M', end = ': ')
+        print(*bF300M, sep = ', ')
+    if not bF335M:
+        print(end = '')
+    else:
+        print('In F335M', end = ': ')
+        print(*bF335M, sep = ', ')
     if not bF356W:
         print(end = '')
     else:
         print('In F356W', end = ': ')
         print(*bF356W, sep = ', ')
+    if not bF360M:
+        print(end = '')
+    else:
+        print('In F360M', end = ': ')
+        print(*bF360M, sep = ', ')
     if not bF410M:
         print(end = '')
     else:
         print('In F410M', end = ': ')
         print(*bF410M, sep = ', ')
-    if not bF444W:
+    if not bF430M:
         print(end = '')
+    else:
+        print('In F430M', end = ': ')
+        print(*bF430M, sep = ', ')
+    if not bF444W:
+        print(end= '')
     else:
         print('In F444W', end = ': ')
         print(*bF444W, sep = ', ')
+    if not bF460M:
+        print(end = '')
+    else:
+        print('In F460M', end = ': ')
+        print(*bF460M, sep = ', ')
+    if not bF480M:
+        print(end = '')
+    else:
+        print('In F480M', end = ': ')
+        print(*bF480M, sep = ', ')
     if not bF560W:
         print(end = '')
     else:
@@ -377,13 +599,26 @@ def get_lines(z):
             '[SII]1', '[SII]2', '[ArIII]', '[SIII]1', '[SIII]2', 'Pa\u03B4', 'Pa\u03B2', 'Pa\u03B3', 'Pa\u03B1']
 
     #making empty lists for each filter
+    F070W = []
+    F090W = []
     F115W = []
+    F140M = []
     F150W = []
+    F162M = []
+    F182M = []
     F200W = []
+    F210M = []
+    F250M = []
     F277W = []
+    F300M = []
+    F335M = []
     F356W = []
+    F360M = []
     F410M = []
+    F430M = []
     F444W = []
+    F460M = []
+    F480M = []
     F560W = []
 
     #equation for wavelength at a given redshift 
@@ -395,61 +630,152 @@ def get_lines(z):
     
         x=el[i]
         nam=name[i]
-        
+
+        if x>0.624 and x<0.781:
+            F070W.append(nam)
+        if x>0.795 and x<1.005:
+            F090W.append(nam)
         if x>1.013 and x<1.282:
             F115W.append(nam)
+        if x>1.331 and x<1.479:
+            F140M.append(nam)
         if x>1.331 and x<1.668:
             F150W.append(nam)
+        if x>1.542 and x<1.713:
+            F162M.append(nam)
+        if x>1.722 and x<1.968:
+            F182M.append(nam)
         if x>1.755 and x<2.227:
             F200W.append(nam)
+        if x>1.992 and x<2.201:
+            F210M.append(nam)
+        if x>2.412 and x<2.595:
+            F250M.append(nam)
         if x>2.423 and x<3.132:
             F277W.append(nam)
+        if x>2.831 and x<3.156:
+            F300M.append(nam)
+        if x>3.177 and x<3.537:
+            F335M.append(nam)
         if x>3.135 and x<3.981:
             F356W.append(nam)
+        if x>3.426 and x<3.814:
+            F360M.append(nam)
         if x>3.866 and x<4.302:
             F410M.append(nam)
+        if x>4.167 and x<4.398:
+            F430M.append(nam)
         if x>3.881 and x<4.982:
             F444W.append(nam)
+        if x>4.515 and x<4.747:
+            F460M.append(nam)
+        if x>4.662 and x<4.972:
+            F480M.append(nam)
         if x>5.054 and x<6.171:
             F560W.append(nam)
 
     #printing out the list of wavelengths for each filter, if there are none then nothing is output
     print('Minor Lines:')
+    if not F070W:
+        print(end = '')
+    else:
+        print('In F070W', end = ': ')
+        print(*F070W, sep = ', ')
+    if not F090W:
+        print(end = '')
+    else:
+        print('In F090W', end = ': ')
+        print(*F090W, sep = ', ')
     if not F115W:
         print(end = '')
     else:
         print('In F115W', end = ': ')
         print(*F115W, sep = ', ')
+    if not F140M:
+        print(end = '')
+    else:
+        print('In F140M', end = ': ')
+        print(*F140M, sep = ', ')
     if not F150W:
         print(end = '')
     else:
         print('In F150W', end = ': ')
         print(*F150W, sep = ', ')
+    if not F162M:
+        print(end = '')
+    else:
+        print('In F162M', end = ': ')
+        print(*F162M, sep = ', ')
+    if not F182M:
+        print(end = '')
+    else:
+        print('In F182M', end = ': ')
+        print(*F182M, sep = ', ')
     if not F200W:
         print(end = '')
     else:
         print('In F200W', end = ': ')
         print(*F200W, sep = ', ')
+    if not F210M:
+        print(end = '')
+    else:
+        print('In F210M', end = ': ')
+        print(*F210M, sep = ', ')
+    if not F250M:
+        print(end = '')
+    else:
+        print('In F250M', end = ': ')
+        print(*F250M, sep = ', ')
     if not F277W:
         print(end = '')
     else:
         print('In F277W', end = ': ')
         print(*F277W, sep = ', ')
+    if not F300M:
+        print(end = '')
+    else:
+        print('In F300M', end = ': ')
+        print(*F300M, sep = ', ')
+    if not F335M:
+        print(end = '')
+    else:
+        print('In F335M', end = ': ')
+        print(*F335M, sep = ', ')
     if not F356W:
         print(end = '')
     else:
         print('In F356W', end = ': ')
         print(*F356W, sep = ', ')
+    if not F360M:
+        print(end = '')
+    else:
+        print('In F360M', end = ': ')
+        print(*F360M, sep = ', ')
     if not F410M:
         print(end = '')
     else:
         print('In F410M', end = ': ')
         print(*F410M, sep = ', ')
+    if not F430M:
+        print(end = '')
+    else:
+        print('In F430M', end = ': ')
+        print(*F430M, sep = ', ')
     if not F444W:
         print(end= '')
     else:
         print('In F444W', end = ': ')
         print(*F444W, sep = ', ')
+    if not F460M:
+        print(end = '')
+    else:
+        print('In F460M', end = ': ')
+        print(*F460M, sep = ', ')
+    if not F480M:
+        print(end = '')
+    else:
+        print('In F480M', end = ': ')
+        print(*F480M, sep = ', ')
     if not F560W:
         print(end = '')
     else:
